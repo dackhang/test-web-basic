@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review HTML Page</title>
+    <script type="text/javascript">
+        // Hàm JavaScript để cập nhật thời gian hiện tại mỗi giây
+        function updateTime() {
+            var currentDate = new Date();
+            var formattedTime = currentDate.toLocaleTimeString(); // Định dạng thời gian (giờ:phút:giây)
+            document.getElementById("time").innerHTML = formattedTime; // Hiển thị thời gian lên trang
+        }
+        setInterval(updateTime, 1000);
+    </script>
+</head>
+<body>
+    <h1>Tính tổng 2 số cơ bản</h1>
+
+    <!-- Thời gian sẽ tự động cập nhật -->
+    <p>Ngày giờ hiện tại: <span id="time"></span></p>
+
+    <h1>
+        <font style="color: red" id="tinhtong">Tổng = 12</font>
+    </h1>
+
+    <h1>
+        <font style="color: yellow" id="tinhhieu">Hiệu = -4</font>
+    </h1>
+
+    <h1>
+        <font style="color: cyan" id="tinhtich">Tích = 32</font>
+    </h1>
+
+    <h1>
+        <font style="color: blue" id="tinhthuong">Thương = 0.5</font>
+    </h1>
+
+    <h1>
+        <font style="color: gray" id="tinhtongtu1toi100">
+            Tổng dãy từ 1 tới 100 là 5050
+        </font>
+    </h1>
+
+    <script type="text/javascript">
+        updateTime();
+    </script>
+</body>
+</html>
